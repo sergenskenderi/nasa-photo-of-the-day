@@ -20,7 +20,7 @@ function ApodPage() {
     if (!data || data.length === 0) return <h3>Loading...</h3>;
   return (
     <div className="App">
-    <ApodSection key={data.date} data={data}/>;
+    <ApodSection key={data.date} data={data}/>
     </div>
   );
 }
