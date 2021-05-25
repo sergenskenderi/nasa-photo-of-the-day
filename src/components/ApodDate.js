@@ -1,8 +1,13 @@
 import React from "react";
+import DatePicker from 'react-date-picker';
 
-function ApodDate({date}) {
+function ApodDate({date , setDate}) {
   return (
-      <h3>{date}</h3>
+      <DatePicker
+        onChange={date => setDate(date)}
+        value={date}
+        format="yyyy-MM-dd"
+      />
   );
 }
 

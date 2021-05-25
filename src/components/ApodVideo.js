@@ -1,14 +1,10 @@
 import React from "react";
-import { ReactVideo } from "reactjs-media";
+import ReactPlayer from 'react-player'
 
 function ApodVideo({url}) {
   return (
     // eslint-disable-next-line
-    <ReactVideo
-    src={url}
-    primaryColor="red"
-    // other props
-/>
+    <ReactPlayer url={url} style={{margin : 'auto'}}/>
   );
 }
 
